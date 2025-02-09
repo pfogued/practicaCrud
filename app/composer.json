@@ -1,0 +1,23 @@
+{
+  "name": "vendor_name/composer",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Jorge",
+      "email": "email@example.com"
+    }
+  ],
+  "autoload": {
+    "classmap": [
+      "class"
+    ],
+   "psr-4": {
+     "App\\Crud\\": "./class/"
+   }
+ },
+ "require": {
+   "ext-mysqli": "*"
+ }
+}
