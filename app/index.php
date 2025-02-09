@@ -39,6 +39,108 @@ switch ($opcion) {
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+        /* Estilos Generales */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        /* Títulos */
+        h1 {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #374151;
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            color: red;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Inputs */
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 0.5rem 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: 0.3s;
+        }
+
+        input[type="text"]:focus,
+        input[type="password"]:focus {
+            border-color: #2563eb;
+            outline: none;
+            box-shadow: 0 0 5px rgba(37, 99, 235, 0.3);
+        }
+
+        /* Botones */
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1rem;
+        }
+
+        input[type="submit"] {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            color: white;
+            cursor: pointer;
+            transition: background 0.3s;
+            margin: 0 5px;
+        }
+
+        input[name="submit"][value="Login"] {
+            background-color: #2563eb;
+        }
+
+        input[name="submit"][value="Registrar"] {
+            background-color: #28a745;
+        }
+
+        input[type="submit"]:hover {
+            opacity: 0.9;
+        }
+
+        /* Responsive */
+        @media (max-width: 480px) {
+            .button-container {
+                flex-direction: column;
+            }
+
+            input[type="submit"] {
+                margin: 5px 0;
+            }
+        }
+    </style>
 </head>
 <body class="flex items-center justify-center h-screen bg-gray-100">
 <div class="w-full max-w-sm bg-white rounded-lg shadow-md p-6">
